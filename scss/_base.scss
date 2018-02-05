@@ -1,4 +1,136 @@
 body {
     background: white;
     font-family: 'Antic Slab', serif;
-} 
+}
+
+main {
+
+.background-start-page {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/background2.png");
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+
+      &:after {
+
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,1,87,0.6);
+    opacity: 0.8;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+  }
+
+      &:hover:after {
+        background: rgba(0,0,0,0.6);
+        opacity: 1;
+
+      }
+
+}
+.content {
+
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -600px;
+    padding: 10px;
+    border: 1px solid white;
+    background: rgba(255,255,255, 0.2);
+
+
+      .left-bar {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        background: url("../images/background-logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid white;
+        float: left;
+
+    }
+
+      .right-bar {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left: none;
+        float: right;
+        margin: 0 auto;
+
+
+          .welcome {
+
+              width: auto;
+              padding: 10px;
+              margin: 5px;
+              font-size: 3.5rem;
+              color: white;
+              text-align: center;
+              font-family: 'Fredoka One', cursive;
+
+          }
+
+          .text-welcome {
+
+            width: auto;
+            padding: 5px;
+            margin: 20px;
+            font-size: 15px;
+            color: white;
+            text-align: left;
+            max-height: 250px;
+            overflow-y: auto;
+
+          }
+
+          .button-welcome {
+
+            width: 50%;
+            height: 50px;
+            margin: 10px auto;
+            margin-top: 10px;
+            border-radius: 25px;
+            border: 2px solid white;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+
+
+                &:hover {
+
+                  background: rgba(56, 79, 245, 0.3);
+                  cursor: pointer;
+
+                }
+
+          }
+
+
+      }
+}
+
+}

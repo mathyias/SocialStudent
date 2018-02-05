@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
         super(props);
         this.state = {
 
-            textStart: 'Welcome',
-            textPage: 'SoundPlay',
+            textPage: 'KnowMe',
 
         }
 
@@ -27,15 +26,22 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	render(){
 
-            return <div className="widget center">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-8">
-                                   {this.props.children}
-                                </div>
-                            </div>
+            return  <main>
+                      <div className="background-start-page"></div>
+                        <div className="content">
+                          <div className="left-bar"></div>
+                          <div className="right-bar">
+                            <p className="welcome">{ this.state.textPage }</p>
+                            <p className="text-welcome">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, leo eu varius convallis, justo tellus egestas urna, eu luctus sapien ante at massa. Vivamus in volutpat diam. Vivamus eu dui blandit, luctus arcu quis, laoreet enim. Maecenas enim ipsum, tristique bibendum pretium id, auctor sit amet neque. Nulla vitae dolor mi. Integer convallis felis sed lacus congue suscipit. Aenean posuere libero ut tortor scelerisque lacinia. Nulla facilisi. Aliquam erat volutpat. Vivamus vitae porta quam. Nullam ornare, dolor in pellentesque iaculis, ligula ligula ornare nunc, non luctus nulla nunc eu tortor. Nulla finibus ligula velit, in facilisis neque eleifend eu.
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, leo eu varius convallis, justo tellus egestas urna, eu luctus sapien ante at massa. Vivamus in volutpat diam. Vivamus eu dui blandit, luctus arcu quis, laoreet enim. Maecenas enim ipsum, tristique bibendum pretium id, auctor sit amet neque. Nulla vitae dolor mi. Integer convallis felis sed lacus congue suscipit. Aenean posuere libero ut tortor scelerisque lacinia. 
+                            </p>
+                            <div className="button-welcome">Join to Us!</div>
+                          </div>
                         </div>
-                   </div>
+                    </main>
+
+
 
 }
 

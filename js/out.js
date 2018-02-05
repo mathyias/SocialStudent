@@ -13702,8 +13702,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             _this.state = {
 
-                textStart: 'Welcome',
-                textPage: 'SoundPlay'
+                textPage: 'KnowMe'
 
             };
 
@@ -13715,18 +13714,30 @@ document.addEventListener('DOMContentLoaded', function () {
             value: function render() {
 
                 return _react2.default.createElement(
-                    'div',
-                    { className: 'widget center' },
+                    'main',
+                    null,
+                    _react2.default.createElement('div', { className: 'background-start-page' }),
                     _react2.default.createElement(
                         'div',
-                        { className: 'container' },
+                        { className: 'content' },
+                        _react2.default.createElement('div', { className: 'left-bar' }),
                         _react2.default.createElement(
                             'div',
-                            { className: 'row' },
+                            { className: 'right-bar' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'welcome' },
+                                this.state.textPage
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'text-welcome' },
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, leo eu varius convallis, justo tellus egestas urna, eu luctus sapien ante at massa. Vivamus in volutpat diam. Vivamus eu dui blandit, luctus arcu quis, laoreet enim. Maecenas enim ipsum, tristique bibendum pretium id, auctor sit amet neque. Nulla vitae dolor mi. Integer convallis felis sed lacus congue suscipit. Aenean posuere libero ut tortor scelerisque lacinia. Nulla facilisi. Aliquam erat volutpat. Vivamus vitae porta quam. Nullam ornare, dolor in pellentesque iaculis, ligula ligula ornare nunc, non luctus nulla nunc eu tortor. Nulla finibus ligula velit, in facilisis neque eleifend eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, leo eu varius convallis, justo tellus egestas urna, eu luctus sapien ante at massa. Vivamus in volutpat diam. Vivamus eu dui blandit, luctus arcu quis, laoreet enim. Maecenas enim ipsum, tristique bibendum pretium id, auctor sit amet neque. Nulla vitae dolor mi. Integer convallis felis sed lacus congue suscipit. Aenean posuere libero ut tortor scelerisque lacinia.'
+                            ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'col-8' },
-                                this.props.children
+                                { className: 'button-welcome' },
+                                'Join to Us!'
                             )
                         )
                     )
